@@ -19,9 +19,12 @@
       <label for="nome-treino">Nome do treino</label>
       <input type="text" id="nome-treino" name="nome-treino" required>
 
-      <label for="grupo-muscular">Grupo muscular</label>
-      <input type="text" id="grupo-muscular" name="grupo-muscular">
-
+      <label for="exercicio">Exercício</label>
+        <form action="/buscar" method="get">
+            <input type="search" name="query" placeholder="Pesquisar..." required>
+            <button type="submit">Adicionar</button>
+        </form> 
+          
       <label for="descricao">Descrição</label>
       <input type="text" id="descricao" name="descricao">
 
