@@ -21,8 +21,13 @@
 
       <label for="exercicio">Exercício</label>
         <form action="/buscar" method="get">
-          
-            <input type="search" name="query" placeholder="Pesquisar..." required>
+        <select name="categoria">
+        <option value="">Todas</option>
+        <option value="Supino">Supino</option>
+        <option value="Barra lateral">Barra lateral</option>
+        <option value="Cardio">Cardio</option>
+      </select>
+
             <button type="submit">Adicionar</button>
       </form> 
 
