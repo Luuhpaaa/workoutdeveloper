@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work Out - Cadastrar novo treino</title>
 </head>
 <body>
@@ -19,17 +20,84 @@
       <label for="nome-treino">Nome do treino</label>
       <input type="text" id="nome-treino" name="nome-treino" required>
 
-      <label for="exercicio">Exercício</label>
-        <form action="/buscar" method="get">
-        <select name="categoria">
-        <option value="">Todas</option>
-        <option value="Supino">Supino</option> 
-        <option value="Barra lateral">Barra lateral</option>
-        <option value="Cardio">Cardio</option>
-      </select>
+      <fieldset>
+        <legend>Exercício 1</legend>
 
-            <button type="submit">Adicionar</button>
-      </form> 
+        <label for="exercicio-1">Exercício</label>
+        <select id="exercicio-1" name="exercicio" required>
+          <option value="" selected disabled>Selecione um exercício</option>
+          <option value="Supino">Supino</option>
+          <option value="Barra lateral">Barra lateral</option>
+          <option value="Cardio">Cardio</option>
+        </select>
+
+        <label for="series-1">Séries</label>
+        <input type="number" id="series-1" name="series" min="1" required>
+
+        <label for="repeticoes-1">Repetições</label>
+        <input type="number" id="repeticoes-1" name="repeticoes" min="1" required>
+
+        <label for="tecnica-1">Técnica</label>
+        <input type="text" id="tecnica-1" name="tecnica">
+
+        <label for="obs-1">Observações</label>
+        <textarea id="obs-1" name="obs" rows="2"></textarea>
+      </fieldset>
+
+      <details>
+        <summary>Adicionar exercício 2</summary>
+        <fieldset>
+          <legend>Exercício 2</legend>
+
+          <label for="exercicio-2">Exercício</label>
+          <select id="exercicio-2" name="exercicio">
+            <option value="" selected>Nenhum</option>
+            <option value="Supino">Supino</option>
+            <option value="Barra lateral">Barra lateral</option>
+            <option value="Cardio">Cardio</option>
+          </select>
+
+          <label for="series-2">Séries</label>
+          <input type="number" id="series-2" name="series" min="1">
+
+          <label for="repeticoes-2">Repetições</label>
+          <input type="number" id="repeticoes-2" name="repeticoes" min="1">
+
+          <label for="tecnica-2">Técnica</label>
+          <input type="text" id="tecnica-2" name="tecnica">
+
+          <label for="obs-2">Observações</label>
+          <textarea id="obs-2" name="obs" rows="2"></textarea>
+        </fieldset>
+      </details>
+
+
+      <details>
+        <summary>Adicionar exercício 3</summary>
+        <fieldset>
+          <legend>Exercício 3</legend>
+
+          <label for="exercicio-3">Exercício</label>
+          <select id="exercicio-3" name="exercicio">
+            <option value="" selected>Nenhum</option>
+            <option value="Supino">Supino</option>
+            <option value="Barra lateral">Barra lateral</option>
+            <option value="Cardio">Cardio</option>
+          </select>
+
+          <label for="series-3">Séries</label>
+          <input type="number" id="series-3" name="series" min="1">
+
+          <label for="repeticoes-3">Repetições</label>
+          <input type="number" id="repeticoes-3" name="repeticoes" min="1">
+
+          <label for="tecnica-3">Técnica</label>
+          <input type="text" id="tecnica-3" name="tecnica">
+
+          <label for="obs-3">Observações</label>
+          <textarea id="obs-3" name="obs" rows="2"></textarea>
+        </fieldset>
+      </details>
 
       <label for="descricao">Descrição</label>
       <input type="text" id="descricao" name="descricao">
