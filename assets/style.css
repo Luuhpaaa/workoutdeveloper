@@ -1,6 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
     background-color:black;
 }
-h1 h2 h3 p {
+h1, h2, h3, h4, p, li, label{
     color: rgb(252, 253, 253);
 }
+a :hover{
+    color: rgb(252, 253, 253);
+}
+a{
+    color: rgb(252, 253, 253);
+    text-decoration: none
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+ 
+header nav a {
+  padding: 8px 20px;
+  background: rgb(223, 255, 190);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: filter 0.15s, transform 0.15s;
+}
+ 
+
+ 
