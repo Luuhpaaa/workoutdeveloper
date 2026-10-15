@@ -71,6 +71,8 @@ main {
     color: #000;
 }
 .card-treino {
+    display: flex;
+    flex-direction: column;
     max-width: 550px;
     max-height: 520px;
     margin-top: 20px;
@@ -99,4 +101,11 @@ main {
 button{
     color: rgb(8, 8, 8);
     border-radius: 6px;
+}
+.card_exercicio{
+    display: grid;
+    grid-row: inherit;
+    background-color: rgb(255, 255, 255) !important;
+    max-width: 250px;
+    
 }

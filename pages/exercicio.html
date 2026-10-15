@@ -15,38 +15,39 @@
   </header>
 
   <main>
+
+    <section class="card">
     <h2>Treino: Superiores</h2>
+      <div></div>
+    <ul >
+      <li><a href="exercicio.html">Supino</a></li>
+      <li><a href="exercicio.html">Remada</a></li>
+      <li><a href="exercicio.html">Cardio</a></li>
+    </ul>
 
-    <section>
-      <h3>Exercícios</h3>
-      <ul>
-        <li><a href="exercicio.html">Supino</a></li>
-        <li><a href="exercicio.html">Remada</a></li>
-        <li><a href="exercicio.html">Cardio</a></li>
-      </ul>
+      <section class="card card_exercicio">
+        <h4>Detalhes do Treino</h4>
+        <ul>
+          <li>Séries: 4</li>
+          <li>Repetições: 12</li>
+          <li>Carga: 20 kg</li>
+          <li>Tempo: 40 min</li>
+        </ul>
+
+        <form action="#" method="post">
+          <h4>Registrar execução</h4>
+          <label for="carga-executada">Carga executada (kg)</label>
+          <div><input type="number" id="carga-executada" name="carga-executada"></div>
+
+          <label for="repeticoes-executadas">Repetições executadas</label>
+          <div><input type="number" id="repeticoes-executadas" name="repeticoes-executadas"></div>
+
+          <button type="submit">Salvar</button>
+        </form>
+      </section>
     </section>
-
-    <aside>
-      <h3>Supino</h3>
-      <h4>Detalhes do Treino</h4>
-      <ul>
-        <li>Séries: 4</li>
-        <li>Repetições: 12</li>
-        <li>Carga: 20 kg</li>
-        <li>Tempo: 40 min</li>
-      </ul>
-
-      <form action="#" method="post">
-        <h4>Registrar execução</h4>
-        <label for="carga-executada">Carga executada (kg)</label>
-        <input type="number" id="carga-executada" name="carga-executada">
-
-        <label for="repeticoes-executadas">Repetições executadas</label>
-        <input type="number" id="repeticoes-executadas" name="repeticoes-executadas">
-
-        <button type="submit">Salvar</button>
-      </form>
-    </aside>
+    <button type="submit">Editar treino</button>
+    <button type="submit">Excluir treino</button>
   </main>
 </body>
 </html>
