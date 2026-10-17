@@ -16,94 +16,78 @@
 
   <main>
     <h2>Cadastrar novo treino</h2>
+    
+    <form action="#" method="post" class="form-container">
+      <div class="card card_novotreino">
+        
+        <label for="nome-treino">Nome do treino</label>
+        <input type="text" id="nome-treino" name="nome-treino" required>
 
-    <form action="#" method="post">
-      <label for="nome-treino">Nome do treino</label>
-      <input type="text" id="nome-treino" name="nome-treino" required>
+        <div class="add_novoexercicio">
+          <p class="subtitulo">Exercícios</p>
+          
+          <div class="busca-container">
+            <input type="text" placeholder="Buscar exercício..." class="input-busca">
+          </div>
 
-      <fieldset>
-        <legend>Exercício 1</legend>
+          <div class="item-exercicio">
+            <input type="radio" name="exercicio-selecionado" id="ex-supino" class="radio-toggle">
+            <label for="ex-supino" class="label-exercicio">
+              <span>Supino</span>
+              <span class="btn-mais">+</span>
+            </label>
 
-        <label for="exercicio-1">Exercício</label>
-        <select id="exercicio-1" name="exercicio" required>
-          <option value="" selected disabled>Selecione um exercício</option>
-          <option value="Supino">Supino</option>
-          <option value="Barra lateral">Barra lateral</option>
-          <option value="Cardio">Cardio</option>
-        </select>
+            <div class="painel-detalhes">
+              <div class="card card-detalhes-inner">
+                <label for="series-supino">Séries</label>
+                <input type="number" id="series-supino" name="series-supino">
 
-        <label for="series-1">Séries</label>
-        <input type="number" id="series-1" name="series" min="1" required>
+                <label for="reps-supino">Repetições</label>
+                <input type="text" id="reps-supino" name="reps-supino">
 
-        <label for="repeticoes-1">Repetições</label>
-        <input type="number" id="repeticoes-1" name="repeticoes" min="1" required>
+                <label for="tecnica-supino">Técnica</label>
+                <input type="text" id="tecnica-supino" name="tecnica-supino">
 
-        <label for="tecnica-1">Técnica</label>
-        <input type="text" id="tecnica-1" name="tecnica">
+                <label for="obs-supino">Observações</label>
+                <textarea id="obs-supino" name="obs-supino" rows="3"></textarea>
 
-        <label for="obs-1">Observações</label>
-        <textarea id="obs-1" name="obs" rows="2"></textarea>
-      </fieldset>
-
-      <details>
-        <summary>Adicionar exercício 2</summary>
-        <fieldset>
-          <legend>Exercício 2</legend>
-
-          <label for="exercicio-2">Exercício</label>
-          <select id="exercicio-2" name="exercicio">
-            <option value="" selected>Nenhum</option>
-            <option value="Supino">Supino</option>
-            <option value="Barra lateral">Barra lateral</option>
-            <option value="Cardio">Cardio</option>
-          </select>
-
-          <label for="series-2">Séries</label>
-          <input type="number" id="series-2" name="series" min="1">
-
-          <label for="repeticoes-2">Repetições</label>
-          <input type="number" id="repeticoes-2" name="repeticoes" min="1">
-
-          <label for="tecnica-2">Técnica</label>
-          <input type="text" id="tecnica-2" name="tecnica">
-
-          <label for="obs-2">Observações</label>
-          <textarea id="obs-2" name="obs" rows="2"></textarea>
-        </fieldset>
-      </details>
+                <button type="button" class="btn-adicionar-item">Adicionar</button>
+              </div>
+            </div>
+          </div>
 
 
-      <details>
-        <summary>Adicionar exercício 3</summary>
-        <fieldset>
-          <legend>Exercício 3</legend>
+          <div class="item-exercicio">
+            <input type="radio" name="exercicio-selecionado" id="ex-remada" class="radio-toggle">
+            <label for="ex-remada" class="label-exercicio">
+              <span>Remada</span>
+              <span class="btn-mais">+</span>
+            </label>
 
-          <label for="exercicio-3">Exercício</label>
-          <select id="exercicio-3" name="exercicio">
-            <option value="" selected>Nenhum</option>
-            <option value="Supino">Supino</option>
-            <option value="Barra lateral">Barra lateral</option>
-            <option value="Cardio">Cardio</option>
-          </select>
+            <div class="painel-detalhes">
+              <div class="card card-detalhes-inner">
+                <label for="series-remada">Séries</label>
+                <input type="number" id="series-remada" name="series-remada">
 
-          <label for="series-3">Séries</label>
-          <input type="number" id="series-3" name="series" min="1">
+                <label for="reps-remada">Repetições</label>
+                <input type="text" id="reps-remada" name="reps-remada">
 
-          <label for="repeticoes-3">Repetições</label>
-          <input type="number" id="repeticoes-3" name="repeticoes" min="1">
+                <label for="tecnica-remada">Técnica</label>
+                <input type="text" id="tecnica-remada" name="tecnica-remada">
 
-          <label for="tecnica-3">Técnica</label>
-          <input type="text" id="tecnica-3" name="tecnica">
+                <label for="obs-remada">Observações</label>
+                <textarea id="obs-remada" name="obs-remada" rows="3"></textarea>
 
-          <label for="obs-3">Observações</label>
-          <textarea id="obs-3" name="obs" rows="2"></textarea>
-        </fieldset>
-      </details>
+                <button type="button" class="btn-adicionar-item">Adicionar</button>
+              </div>
+            </div>
+          </div>
 
-      <label for="descricao">Descrição</label>
-      <input type="text" id="descricao" name="descricao">
+        </div>
 
-      <button type="submit">Cadastrar</button>
+        <button type="submit" class="cadastrar">Cadastrar</button>
+
+      </div>
     </form>
   </main>
 </body>
